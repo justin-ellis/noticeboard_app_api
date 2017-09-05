@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://noticeboard-general-assembly.herokuapp.com/notices'
+    origins '*'
 
     resource '*',
       headers: :any,
